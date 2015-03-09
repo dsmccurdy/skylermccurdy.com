@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="smcom">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,12 +16,8 @@
   </head>
   <body>
   
-	  <div id="main" class="container">
-	  	<div class="row">
-	  		<div class="col col-lg-4 col-lg-offset-4">
-	  			Ello
-	  		</div>
-	  	</div>
+	  <div id="main" class="container animate-main" ng-view>
+	  	
 	  </div>
     
     
@@ -34,12 +30,12 @@
 	    			<span class="icon-bar"></span>
 	    			<span class="icon-bar"></span>
 	    		</button>
-	    		<a class="navbar-brand" href="#!/">Skyler McCurdy</a>
+	    		<a class="navbar-brand" href="#/">Skyler McCurdy</a>
 	    	</div>
 	    	<div id="navbar" class="collapse navbar-collapse">
 	    		<ul class="nav navbar-nav">
-	    			<li><a href="#!/resume">Resume</a></li>
-	    			<li><a href="#!/portfolio">Portfolio</a><li>
+	    			<li><a href="#/resume">Resume</a></li>
+	    			<li><a href="#/portfolio">Portfolio</a><li>
 	    			<li><a href="http://www.linkedin.com/in/SkylerMcCurdy"><img src="/img/linkedin_icon.png" /></a></li>
 	    		</ul>
 	    	</div>
@@ -48,7 +44,18 @@
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/angular.min.js"></script>
+    <script src="/js/angular-route.min.js"></script>
+    <script src="/js/angular-animate.min.js"></script>
+    
+    <script src="/js/site/app.js"></script>
+    
+    <script src="/js/site/controllers/homeController.js"></script>
+    <script src="/js/site/controllers/resumeController.js"></script>
+    <script src="/js/site/controllers/portfolioController.js"></script>
+    
+    <script src="/js/site/route.js"></script>
   </body>
 </html>

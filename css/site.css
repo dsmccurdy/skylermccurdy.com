@@ -1,3 +1,167 @@
 #main{
-	margin-top:60px;
+	
+	position:absolute;
+	left:50%;
+	
+	padding-top:40px;
+	padding-bottom:20px;
+	
+	border-radius:20px;
+	
+	background-color:white;
+
 }
+
+#main-inner{
+
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:30px;
+	bottom:20px;
+	
+	padding:10px;
+
+	overflow-y:auto;
+
+}
+
+
+
+
+@media (max-width:767px){
+	#main{
+		left:15px;
+		right:15px;
+	}
+}
+
+@media (min-width:768px){
+	#main{
+		margin-left:-375px;
+	}
+}
+
+@media (min-width:992px){
+	#main{
+		margin-left:-485px;
+	}
+}
+
+@media (min-width:1200px){
+	#main{
+		margin-left:-585px;
+	}
+}
+
+body{
+	background-color:black;
+}
+
+.animate-main{
+	
+	top:20px;
+	bottom:10px;
+}
+
+.animate-main.ng-enter{
+
+	
+	-webkit-animation-name: main_in;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    
+    -moz-animation-name: main_in;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-delay: 0s;
+    
+    -o-animation-name: main_in;
+    -o-animation-duration: 0.5s;
+    -o-animation-timing-function: linear;
+    -o-animation-delay: 0s;
+    
+    animation-name: main_in;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    
+    bottom:1600px;
+    top:-1580px;
+}
+
+.animate-main.ng-leave{
+	
+	-webkit-animation-name: main_out;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    
+    -moz-animation-name: main_out;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-delay: 0s;
+    
+    -o-animation-name: main_out;
+    -o-animation-duration: 0.5s;
+    -o-animation-timing-function: linear;
+    -o-animation-delay: 0s;
+    
+    -animation-name: main_out;
+    -animation-duration: 0.5s;
+    -animation-timing-function: linear;
+    -animation-delay: 0s;
+}
+
+@keyframes main_in{
+	from { bottom:1600px;top:-1580px; }
+	to { bottom:10px;top:20px; }
+	
+}
+
+
+@-webkit-keyframes main_in{
+	from { bottom:1600px;top:-1580px; }
+	to { bottom:10px;top:20px; }
+}
+
+
+@-moz-keyframes main_in{
+	from { bottom:1600px;top:-1580px; }
+	to { bottom:10px;top:20px; }
+}
+
+
+@-o-keyframes main_in{
+	from { bottom:1600px;top:-1580px; }
+	to { bottom:10px;top:20px; }
+}
+
+
+
+
+@keyframes main_out{
+	from { bottom:10px;top:20px; }
+	to { bottom:1600px;top:-1580px; }
+}
+
+
+@-webkit-keyframes main_out{
+	from { bottom:10px;top:20px; }
+	to { bottom:1600px;top:-1580px; }
+}
+
+
+@-moz-keyframes main_out{
+	from { bottom:10px;top:20px; }
+	to { bottom:1600px;top:-1580px; }
+}
+
+
+@-o-keyframes main_out{
+	from { bottom:10px;top:20px; }
+	to { bottom:1600px;top:-1580px; }
+}
+
+
