@@ -23,6 +23,7 @@
 	padding:10px;
 
 	overflow-y:auto;
+	overflow-x:hidden;
 
 }
 
@@ -164,4 +165,20 @@ body{
 	to { bottom:1600px;top:-1580px; }
 }
 
+
+
+
+
+.mug-shot{
+	width:100px;
+	height:100px;
+	border-radius:50px;
+	margin:25px;
+}
+
+.icon{
+	height:1.5em;
+	margin-right:0.5em;
+
+}
 
