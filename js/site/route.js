@@ -13,6 +13,10 @@ smcom.config(['$routeProvider',function($routeProvider){
 			templateUrl: '/html/portfolio.html',
 			controller: 'PortfolioController'
 			}).
+		when('/letters',{
+			templateUrl: '/html/letters.html',
+			controller: 'LettersController'
+			}).
 		otherwise({
 			redirectTo:'/'
 		});
