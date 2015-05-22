@@ -1,6 +1,10 @@
 smcom.controller('PortfolioController',['$scope',function($scope){
 
-	$scope.num1 = 2;
-	$scope.num2 = 2;
+	$scope.contact={
+		
+		"email":btoa("c2t5bGVyQHNreWxlcm1jY3VyZHkuY29t");
+		"phone":btoa("KDQzNSk2MzMtMDE2Mg==");
+	
+	}
 
 }]);

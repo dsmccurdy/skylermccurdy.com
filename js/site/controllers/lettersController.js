@@ -1,3 +1,3 @@
-smcom.controller('LettersController',function($scope)){
+smcom.controller('LettersController',function($scope){
 
-}
+});
